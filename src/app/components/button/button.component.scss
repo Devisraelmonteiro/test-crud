@@ -1,0 +1,19 @@
+.botao-primario{
+  width: auto;
+  outline: none;
+  border: 0;
+  background: rgb(12, 168, 230);
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 6px 20px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 3px 1px #080808;
+  transition: 0.3s linear all;
+  &:houver{
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 3px #080808;;
+  }
+&:disabled{cursor: default;opacity: 0.7;}
+
+}

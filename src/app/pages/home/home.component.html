@@ -1,0 +1,94 @@
+<app-menu></app-menu>
+
+<div class="container-fluid pt-3">
+  <div class="row">
+    <!--lado esquerdo da tela-->
+    <div class="col-12 col-lg-9">
+      <div class="card-info">
+        <div class="row">
+          <div class="col-12 col-lg-8">
+            <h1 class="titulo">Crud Users</h1>
+            <h3 class="subtitulo">Mais eficiência na gestão dos <span>usuários</span> e de seus benefícios. Chega de sistemas antigos e sem usabilidade, agora com o <span>Crud Users</span> seu trabalho fica até 3x mais rápido e simplificado.<br>
+              Confira um resumo das informações em nosso <span>Dashboard</span>
+            </h3>
+            <app-button textButton="iniciar" router-link="/usuarios"></app-button>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="img/dashbord-juju.png" width="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--lado direito da tela-->
+    <div class="col-12 col-lg-3">
+      <div class="card-info">
+        <div class="container-perfil">
+          <img src="img/perfil juju.jpeg" class="img-perfil">
+          <h4>Seja bem vindo</h4>
+          <h5>{{userName}}</h5>
+          <li><mat-icon>location_on</mat-icon> RJ-Brasil</li>
+        </div>
+        <hr class="hr">
+        <p class="texto-p"> "colocar bibliográfia  sua
+        <hr class="hr">
+
+        <li> <mat-icon>person</mat-icon>gerencie usuários</li>
+        <li> <mat-icon>loyalty</mat-icon>adicione benefícios</li>
+        <li> <mat-icon>format_list_bulleted </mat-icon>consulte cadastrados</li>
+        <li> <mat-icon>delete</mat-icon>exclua usuarios</li>
+      </div>
+    </div>
+  </div>
+
+  <!--parte de baixo da tela-->
+  <div class="row mt-4">
+    <!--card spinner esquerdo-->
+    <div class="col-6">
+      <div class="card-info">
+        <div class="row">
+          <div class="col-8">
+            <p class="texto-card">Total de clientes cadastrados no sistema</p>
+            <p class="numero-card">79</p>
+            <p class="numero-destaque">+5 adicionados no último mês</p>
+          </div>
+          <div class="col-4">
+            <mat-progress-spinner class="examples-margin mx-auto color-spinner" mode="determinate" value="79"></mat-progress-spinner>
+            <p class="info-spinner">79/150</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--card spinner direita-->
+    <div class="col-6">
+      <div class="card-info">
+        <div class="row">
+          <div class="col-8">
+            <p class="texto-card">Total de benefícios cadastrados no sistema</p>
+            <p class="numero-card">4</p>
+            <p class="numero-destaque">+2 adicionados no último mês</p>
+          </div>
+          <div class="col-4">
+            <mat-progress-spinner class="examples-margin mx-auto color-spinner" mode="determinate" value="80"></mat-progress-spinner>
+            <p class="info-spinner">4/5</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--card usuário cadastrado-->
+    <div class="col-12 mt-4">
+      <div class="card-info">
+        <h3 class="titulo">Último cliente cadastrado</h3>
+        <hr class="hr">
+        <div class="row">
+          <div class="col-1"><mat-icon>account_circle</mat-icon></div>
+          <div class="col-1"><p class="texto-p">1</p></div>
+          <div class="col"><p class="texto-p">Israel</p></div>
+          <div class="col"><p class="texto-p">Amil</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
